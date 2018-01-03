@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>教师登录</title>
+<!----------css样式表------------>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/header.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__Css/middle.css">
+<!-------css样式---------->
+<style type="text/css">
+.header{margin-top:5px;width:70%;margin-left:15%;background:url(__PUBLIC__/Image/xueyuan.jpg) center;height:240px;}
+#middlenavrighttop{ background:url(__PUBLIC__/Image/xiaoli.jpg) ; background-size:cover;}
+#middlenavleftLog{width:60%;margin-left:20%;height:210px;padding-top:50px;margin-top:110px;}
+#middlenavleftLoginputone{width:80%;margin-left:10%;background:#FFF;height:30px;line-height:30px;margin-top:10px;background:#CCC;}
+
+</style>
+<!---------js样式------------->
+<script type="text/javascript">
+	 function teacherreg(){
+		window.location.href("__URL__/teacherreg");
+		}
+</script>
+</head>
+
+<body>
+	<include file="http://Public:header"/>
+	<div id="middlenav">
+    	<div id="middlenavleft">
+        	<div id="middlenavleftLog">
+            <form action="__URL__/teachertdologin" method="post">
+            	<input id="middlenavleftLoginputone" placeholder="请输入用户名" required="required" name="adminname" type="text" maxlength="15"/>
+            	<input placeholder="请输入密码" required="required" id="middlenavleftLoginputone" name="password" type="password" maxlength="15"/>
+                <input style="height:30px;width:30%;margin-left:10%;margin-right:10%;background:#666;margin-top:10px;"   type="submit" value="登录"/>
+                <input style="height:30px;width:30%;margin-left:10%;margin-right:10%;background:#666;"onclick="teacherreg()" type="button" value="注册"/>
+            </form>
+            </div>
+        </div>
+    	<include file="http://Public:middleright"/>
+    </div>
+    <include file="http://Public:bottom"/>
+</body>
+</html>

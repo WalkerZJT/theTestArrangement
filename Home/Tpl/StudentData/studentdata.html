@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学生资料</title>
+<!----------css样式表------------>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/header.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__Css/middle.css">
+<!-------css样式---------->
+<style type="text/css">
+.header{margin-top:5px;width:70%;margin-left:15%;background:url(__PUBLIC__/Image/xueyuan.jpg) center;height:240px;}
+#middlenavrighttop{ background:url(__PUBLIC__/Image/xiaoli.jpg) ; background-size:cover;}
+#middlenavleftmodify{background:#ccc;width:48%;margin:5px 1%;height:230px;float:left;}
+
+</style>
+<!---------js样式------------->
+<script type="text/javascript">
+	
+</script>
+</head>
+
+<body>
+	<include file="http://Public:header"/>
+	<div id="middlenav">
+    	<div id="middlenavleft">
+        	<div id="middlenavleftmodify">
+            <h3>个人资料</h3>
+       <!----     <{$demo}>------>
+       <!-----
+            <form name="student" method="post" action="" style="">
+            	学　　号：<input type="text" value="{$studentdata.id}" readonly="readonly"/></br>
+                姓　　名：<input/></br>
+                年　　级：<input/></br>
+                班　　级：<input/></br>
+                邮　　箱：<input/></br>
+                电话号码：<input/></br>
+                <input type="submit" value="提交"/><input type="reset" value="重置"/>
+            </form>
+        ------>
+            </div>
+            <div id="middlenavleftmodify">
+    		<h3>考试成绩</h3>
+            </div>
+            <div id="middlenavleftmodify">
+			<h3>选修科目</h3>
+            </div>
+            <div id="middlenavleftmodify">
+       		<h3>同校好友</h3>
+            </div>
+        </div>
+    	<include file="http://Public:middleright"/>
+    </div>
+    <include file="http://Public:bottom"/>
+</body>
+</html>

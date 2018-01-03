@@ -1,0 +1,27 @@
+<div id="middlenavright">
+        	<div id="middlenavrighttop" title="校历"></div>
+            <div id="middlenavrightbottom">
+            	<input value="学生登录" type="button" onclick="studentLog()"/>
+                <input value="学生资料" type="button" onclick="studentData()"/>
+                <input value="注销" type="button" onclick="studentLogout()"/>
+                <input value="考试信息" type="button" onclick="studentTest()"/>
+            </div>
+</div>
+<style type="text/css">
+	#middlenavrightbottom input{width:30%;height:40px;margin:20px 10%;float:left;font-family: "微软雅黑";background:#1159A5;}
+	#middlenavrightbottom input:hover{background:#1FC4B2;color:#FFF;}
+</style>
+<script type="text/javascript">
+	function studentLog(){
+		window.location.href="http://localhost/theTestArrangement/index.php/StudentLog/studentlog";	
+	}
+	function studentTest(){
+		window.location.href="http://localhost/theTestArrangement/index.php/StudentTest/studenttest";	
+	}
+	function studentLogout(){
+		window.location.href="http://localhost/theTestArrangement/index.php/StudentLog/studentlogout";	
+	}
+	function studentData(){
+		window.location.href="http://localhost/theTestArrangement/index.php/StudentData/studentData";	
+	}
+</script>

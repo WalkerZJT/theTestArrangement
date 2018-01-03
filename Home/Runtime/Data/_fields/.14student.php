@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'studentid', 2 => 'studentname', 3 => 'studentpassword', 4 => 'class', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(5)', 'studentid' => 'varchar(15)', 'studentname' => 'char(30)', 'studentpassword' => 'varchar(30)', 'class' => 'char(15)', ), );?>
